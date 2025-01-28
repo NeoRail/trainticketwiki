@@ -1,0 +1,57 @@
+site_name: Train Ticket Wiki
+
+repo_name: NeoRail/trainticketwiki
+repo_url: https://github.com/NeoRail/trainticketwiki
+edit_uri: edit/trunk/docs/
+
+use_directory_urls: false
+
+#nav:
+#  - index.md
+theme:
+  name: material
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    logo: material/train
+    repo: fontawesome/brands/github
+  features:
+    - content.action.edit
+
+markdown_extensions:
+  - smarty
+  - toc:
+      permalink: true
+  - sane_lists
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.smartsymbols
+  - admonition
+  - pymdownx.details
+  - tables
+  - attr_list
+
+plugins:
+  - git-revision-date-localized:
+      enabled: !ENV [CI, false]
+  - git-committers:
+      enabled: !ENV [CI, false]
+      repository: neorail/trainticketwiki
+      branch: trunk
