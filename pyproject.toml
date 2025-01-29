@@ -11,6 +11,7 @@ mkdocs-material = "*"
 mkdocs-git-revision-date-localized-plugin = "*"
 mkdocs-minify-plugin = "*"
 mkdocs-git-committers-plugin-2 = "*"
+mkdocs-awesome-pages-plugin = "*"
 
 [build-system]
 requires = ["poetry-core"]

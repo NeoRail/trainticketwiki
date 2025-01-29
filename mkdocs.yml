@@ -2,12 +2,10 @@ site_name: Train Ticket Wiki
 
 repo_name: NeoRail/trainticketwiki
 repo_url: https://github.com/NeoRail/trainticketwiki
-edit_uri: edit/trunk/docs/
+edit_uri: edit/main/docs/
 
 use_directory_urls: false
 
-#nav:
-#  - index.md
 theme:
   name: material
   palette:
@@ -29,24 +27,27 @@ theme:
     repo: fontawesome/brands/github
   features:
     - content.action.edit
+    - navigation.indexes
+    - content.footnote.tooltips
 
 markdown_extensions:
-  - smarty
-  - toc:
-      permalink: true
-  - sane_lists
+  - admonition
+  - attr_list
+  - footnotes
   - pymdownx.betterem
   - pymdownx.caret
-  - pymdownx.mark
-  - pymdownx.tilde
+  - pymdownx.details
   - pymdownx.highlight:
       anchor_linenums: true
+  - pymdownx.mark
+  - pymdownx.tilde
   - pymdownx.superfences
   - pymdownx.smartsymbols
-  - admonition
-  - pymdownx.details
+  - sane_lists
+  - smarty
   - tables
-  - attr_list
+  - toc:
+      permalink: true
 
 plugins:
   - git-revision-date-localized:
@@ -55,3 +56,5 @@ plugins:
       enabled: !ENV [CI, false]
       repository: neorail/trainticketwiki
       branch: trunk
+  - awesome-pages
+  - search

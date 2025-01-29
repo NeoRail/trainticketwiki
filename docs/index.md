@@ -1,3 +1,3 @@
 # About Train Ticket Wiki
 
-A wiki for all different public transport ticket standards.
+**Train Ticket Wiki** is a collaborative project on documenting and exploring all kinds of public transport tickets found around the world, mostly focusing on train tickets.
