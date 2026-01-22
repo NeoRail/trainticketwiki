@@ -12,6 +12,8 @@
     - [GitHub](https://github.com/NeoRail)  
 - RailKeys, an upcoming tool to share public keys used by train ticket issuers for ticket verification.
     - [Website](https://railkeys.org)
+- KDE's [travel document extractor](https://commits.kde.org/kitinerary), used e.g. by [Itinerary](https://apps.kde.org/itinerary)
+  and [Nextcloud Mail](https://apps.nextcloud.com/apps/mail) for detecting and importing tickets.
 
 ## Related Media
 
