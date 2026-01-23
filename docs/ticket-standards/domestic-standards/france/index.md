@@ -4,11 +4,11 @@ title: France
 
 The SNCF ("Société National des Chemins de Fer") is the French national train company, which uses its own standard for domestic tickets.
 
-# SNCF Barcode Specification
+## SNCF TGV Barcode Specification
 
 This barcode does not have a public specification file available, and was reverse engineered.
 
-## Notable Characteristics
+### Notable Characteristics
 
 |                |                      |
 |----------------|---------------------:|
@@ -18,7 +18,7 @@ This barcode does not have a public specification file available, and was revers
 | Signature      |                  N/A |
 
 
-## Ticket Structure
+### Ticket Structure
 
 !!! info "Offsets are number of bytes"
 
@@ -43,7 +43,7 @@ Return Departure Station |          116 |        120 |              5 | Empty st
 Return Arrival Station   |          121 |        125 |              5 | Empty string if missing         |
 Return Train Number      |          126 |        130 |              5 | 0-string if missing             |
 
-## Kaitai Spec
+### Kaitai Spec
 
 The Kaitai Spec for this is also located on [GitHub](https://github.com/Fahrschein-Autismus/train-barcode-kaitai-spec/blob/main/sncf/sncf.ksy).
 
@@ -127,3 +127,31 @@ The Kaitai Spec for this is also located on [GitHub](https://github.com/Fahrsche
         size: 5
         doc: "5-digit train number (left-zero-padded)"
     ```
+
+## Ouigo
+
+Long-distance services operated by Ouigo use a different barcode.
+
+This barcode does not have a public specification available, nor has it been reverse engineered.
+
+### Characteristics
+
+* Uses Aztec format.
+* Contains a base64 encoded 174 byte fixed size high entropy binary content.
+
+## SNCF TER Tickets
+
+Depending on the region TER services either use the following format or [UIC DOSIPAS](../../uic-standards/dosipas.html).
+
+This barcode does not have a public specification available, and was reverse engineered.
+
+### Characteristics
+
+* Uses Aztec format.
+* Fixed size, 686 bytes.
+* Contains a binary signature and ASCII content.
+* Uses the same station and tariff codes as the TGV ticket barcodes.
+
+### Kaitai Spec
+
+The Kaitai spec for this is located on [GitHub](https://github.com/Fahrschein-Autismus/train-barcode-kaitai-spec/blob/main/sncf/sncf-ter.ksy).
