@@ -2,4 +2,10 @@
 title: DOSIPAS
 ---
 
-This is not used yet.
+## Specification
+
+TODO
+
+## Known Users
+
+* TER tickets in some regions in France.
