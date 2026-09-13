@@ -17,6 +17,16 @@
 
 ## Related Media
 
+### MRMCD26: "EUTicket when: An update on train (and other) ticket shenanigans"
+
+Talk presented by 551724/maya and CraftByte at MRMCD 2026 on September 11th, 2026.
+
+Links:
+
+- [media.ccc.de](https://media.ccc.de/v/2026-717-euticket-when-an-update-on-train-and-other-ticket-shenanigans)
+- [slides](https://craftbyte.github.io/mrmcd26-slides/)
+- [abstract](https://talks.mrmcd.net/2026/talk/T7ATPE/)
+
 ### 38c3: "What is inside of my train ticket?"
 
 Talk presented by [Q Misell](https://glauca.space/@q) at the 38th Chaos Communication Congress on December 30th, 2024.
